@@ -72,16 +72,19 @@ class Llibre: # book
         pagcas_elem.clear()
         pagcas_elem.send_keys(self.pag)
         pagcas_elem.send_keys(Keys.RETURN)
+        
+    def mat(self):
+        pass
 
 
 with open("contraecasals.txt") as f: # open file with user and pass and create a list with it
     content = f.readlines()
 content = [x.strip() for x in content]
 
-y = str(input("Quina assignatura vols? (cat/cas) "))    # ask for the subject
+y = str(input("Quina assignatura vols? (cat/cas/mates) "))    # ask for the subject
 
 try:
-    x = int(input("A quina pàgina vols anar del llibre de català? ")) # ask for the page
+    x = int(input("A quina pàgina vols anar del llibre? ")) # ask for the page
 
 except:
 
