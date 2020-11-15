@@ -35,7 +35,7 @@ class Llibre: # book
 			Llibre.mat(self)
 		else:
 			print("Hi ha hagut un error, no has escrit bé l'assignatura. Et ficaré al llibre de mates")
-			Llibre.mat(self)    # open the maths by default because there had been an error
+			Llibre.mat(self)    # open the maths by default because there has been an error
 
 	def cat(self):
 
